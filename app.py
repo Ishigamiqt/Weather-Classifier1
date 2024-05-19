@@ -29,7 +29,7 @@ weather_labels = {
     3: 'Sunrise'}
 
 def main():
-    st.title('Weather Classifier System by Garcia')
+    st.title('Weather Classifier System')
     model = load_model()
     file = st.file_uploader("Choose a weather photo from your computer", type=["jpg", "jpeg", "png"])
 

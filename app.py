@@ -39,7 +39,6 @@ def main():
 
         predicted_class = predict_weather(file, model)
         predicted_label = weather_labels.get(predicted_class, 'Unknown')
-        string= f"OUTPUT : {predicted_label}"
-        st.success(string)
+        st.write(f"### Prediction: {predicted_label}")
 if __name__ == '__main__':
     main()
